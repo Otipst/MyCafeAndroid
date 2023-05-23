@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInAdminActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background_login" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_text"
+        android:text="Admin Login"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageAdmin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/display_text"
+        android:padding="2dp"
+        android:src="@drawable/ic_baseline_admin_panel_settings_24"/>
+
+
+    <EditText
+        android:id="@+id/usernameAdmin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageAdmin"
+        android:textSize="21sp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="16dp"
+        android:hint="Username"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/passwordAdmin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameAdmin"
+        android:textSize="21sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:drawableStart="@drawable/ic_baseline_lock_24_orange"
+        android:drawablePadding="16dp"
+        android:hint="Passoword"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/loginAdminButton"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/passwordAdmin"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_rounded"
+        android:padding="10dp"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

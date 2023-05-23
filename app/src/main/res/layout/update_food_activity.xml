@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background_login" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_text"
+        android:text="Menu Information"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageInformation"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/display_text"
+        android:padding="2dp"
+        android:src="@drawable/ic_baseline_fastfood_24_white"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageViewFood"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageInformation"
+        android:padding="2dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_image_24_orange"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuNameUpdate"
+        android:layout_below="@+id/imageViewFood"
+        android:hint="Enter Menu Name"
+        android:inputType="textPersonName|textCapWords"
+        android:drawableStart="@drawable/ic_baseline_restaurant_menu_24_orange"
+        android:drawablePadding="16dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuCategoryUpdate"
+        android:layout_below="@+id/menuNameUpdate"
+        android:hint="Enter Menu Category"
+        android:inputType="textPersonName|textCapWords"
+        android:drawableStart="@drawable/ic_baseline_fastfood_24"
+        android:drawablePadding="16dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuPriceUpdate"
+        android:layout_below="@+id/menuCategoryUpdate"
+        android:hint="Enter Menu Price"
+        android:inputType="textPersonName|textCapWords"
+        android:drawableStart="@drawable/ic_baseline_attach_money_24_orange"
+        android:drawablePadding="16dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:id="@+id/btnUpdate"
+        android:layout_below="@+id/menuPriceUpdate"
+        android:background="@drawable/button_rounded"
+        android:layout_centerHorizontal="true"
+        android:text="Update Menu"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>

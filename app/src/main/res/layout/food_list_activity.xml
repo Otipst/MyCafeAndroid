@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHi"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="32dp"
+        android:text="Hi Admin"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/orange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSub"
+        android:layout_below="@id/textViewHi"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="30dp"
+        android:text="Admin Management"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:textColor="#9A9494"/>
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:id="@+id/peronProfile"
+        android:src="@drawable/ic_baseline_admin_panel_settings_24_orange"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bannerView"
+        android:layout_marginTop="-30dp"
+        android:layout_below="@id/textViewSub"
+        android:src="@drawable/banner"/>
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchFood"
+        android:layout_below="@+id/bannerView"
+        android:hint="Search Your Favorite"
+        android:inputType="textPersonName|textCapWords"
+        android:drawableStart="@drawable/ic_baseline_search_24_orange"
+        android:drawablePadding="16dp"
+        android:padding="10dp"
+        android:layout_marginTop="-40dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:background="@drawable/background"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFabButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        app:elevation="6dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:backgroundTint="@color/orange"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:id="@+id/gridView"
+        android:paddingStart="5dp"
+        android:layout_below="@+id/searchFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:columnWidth="120dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"/>
+
+</RelativeLayout>
